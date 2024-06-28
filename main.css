@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+header {
+    padding: 16px 0;
+    background-color: #182C61;
+    color: #f8f8f8;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav a {
+    color: #f8f8f8;
+    text-decoration: none;
+}
+
+header h1 {
+    font-style: italic;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteudo {
+    
+}
+
+.sobre {
+    margin: 32px 0 48px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobre img {
+    width: 100%;
+}
+.texto-sobre {
+    padding-left: 32px;
+    color: #383737
+}
+
+h2 {
+    color: #182C61;;
+    font-style: italic;
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #182C61;
+}
+
+.produto img {
+    max-width: 100%;
+    margin-bottom: 32px;
+}
+
+.produto a {
+    text-decoration: none;
+    color: black;
+}
+
+.produto p {
+    color: #383737;
+    padding: 8px 0 8px;
+}
+
+.produto button {
+    width: 100%;
+    height: 2em;
+    background-color: #182C61;
+    color: #f8f8f8;
+    border-radius: 4px;
+}
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 23.5%);
+    column-gap: 2%;
+    row-gap: 5%;
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        max-width: 80%;
+    }
+
+    .sobre {
+        display: block;
+        margin: 32px 0 48px;
+    }
+
+    .texto-sobre {
+        padding: 0;
+        margin-top: 32px;
+    }
+
+    .produtos {
+        display: block;
+    }
+
+    .produto h3 {
+        font-size: 2em;
+    }
+    
+    .produto p, button {
+        font-size: 1.3em;
+    }
+
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        max-width: 80%;
+    }
+
+    .sobre {
+        display: block;
+        margin: 32px 0 48px;
+    }
+
+    .texto-sobre {
+        padding: 0;
+        margin-top: 32px;
+    }
+
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+        row-gap: 5%;
+    }
+
+    .produto h3 {
+        font-size: 1.5em;
+    }
+    
+    .produto p, button {
+        font-size: 1.2em;
+    }
+
+}
